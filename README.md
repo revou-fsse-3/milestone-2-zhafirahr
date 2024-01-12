@@ -1,22 +1,3 @@
-<h1 align="center">React News App</h1>
-<h2 align="center">
-<img src="/public/README_img.png">
-</h2>
-
-<h3 align="center">
-    <a href="https://btc-news.netlify.app/" target="_blank">Life Demo</a>
-</h3>
-
-### Description
-
----
-
-It is a Single Page Application with React. Using the API, 100 news about Space are displayed on the page. You can filter them by keywords and go to the page of each news item to read more.
-
-The project was created using React, TypeScript and Material UI.
-
-<p><img src="https://img.shields.io/github/languages/top/liyakot/React-News-App?color=red"></p>
-
 ### Getting Started
 
 ---
