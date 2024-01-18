@@ -1,0 +1,396 @@
+html {
+  scroll-snap-type: y proximity;
+}
+
+.main-container {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.main-content {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
+  opacity: 0;
+  transition: 1s ease-in;
+}
+
+.loading-placeholder {
+  min-height: 1330px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.real-loader {
+  height: 200px !important;
+}
+
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(441px, max-content));
+  padding: 15px 6%;
+}
+
+.newsfeed-div {
+  max-width: 700px;
+  width: 100%;
+  min-height: 1360px;
+  display: grid;
+}
+
+.main-enter {
+  opacity: 1;
+}
+
+.article-grid {
+  grid-template-columns: auto max-content;
+  column-gap: 15px;
+}
+
+.article-buttons {
+  min-width: 550px;
+  align-self: end;
+}
+
+.article-info {
+  justify-content: center;
+  max-width: 401px;
+}
+
+.article-info aside {
+  line-height: 24px;
+}
+
+.article-info h2 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #232f3e;
+  font-weight: 900;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 60px;
+}
+
+.aside-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #4e6a8d;
+  font-size: 14px;
+}
+
+.aside-heading {
+  margin-top: -1px;
+}
+
+.aside-heading h3 {
+  color: #4e6a8d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px !important;
+  font-weight: 400;
+}
+
+.article-grid:hover h2 {
+  text-decoration: underline !important;
+}
+
+.news-image {
+  min-width: 159px;
+  max-width: 290px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border-bottom: 4px solid #ffdb4d;
+}
+
+.calender-i {
+  position: relative;
+  bottom: 5px;
+}
+
+.trending-header {
+  font-size: 18px !important;
+  font-weight: 900;
+}
+
+.trending-header::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 5px;
+  top: 10px;
+  height: 2px;
+  width: 100%;
+  background-color: #232f3e;
+  max-width: 190px;
+}
+
+.trending-header::before {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0px;
+  top: 35px;
+  height: 6px;
+  width: 25%;
+  background-color: #232f3e;
+  max-width: 190px;
+}
+
+.trending-container {
+  max-width: 300px;
+  justify-self: end;
+  width: 100%;
+}
+
+.trending-articles {
+  position: relative;
+  top: 10px;
+}
+
+.trending-articles article {
+  display: grid;
+  grid-template-columns: 72px auto;
+  gap: 10px;
+}
+
+.top-image {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  width: 100%;
+  height: 72px;
+  border-radius: 5px;
+}
+
+.top-title {
+  line-height: 23px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  color: #3d5470;
+  width: 204px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+article:hover {
+  cursor: pointer;
+}
+
+article:hover .top-title {
+  text-decoration: underline !important;
+}
+
+.searched-card {
+  background-color: white;
+}
+
+.searched-header {
+  cursor: pointer;
+}
+
+.mainArticleDiv {
+  padding: 20px;
+}
+
+.next-button {
+  border-radius: 4px;
+  background-color: #2d3ea7;
+  color: white;
+  line-height: 1.2;
+  padding: 10px 16px;
+  border: 0;
+  font-size: 16px;
+}
+
+.call-action {
+  padding: 0px 5px 40px 5px;
+}
+
+.email-box {
+  height: auto !important;
+  padding: 30px 20px !important;
+  box-shadow: none;
+  text-align: center;
+  background: #3732b3;
+  border-bottom: 10px solid #ffe052;
+  margin: 0 20px;
+  border-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.email-inner {
+  max-width: 500px;
+}
+
+.email-box h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.email-box p {
+  color: #ebf0ff;
+  margin: 20px 10px;
+  line-height: 27px;
+  font-size: 16px;
+  max-width: 480px;
+}
+
+.email-input {
+  height: 50px;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.email-input input {
+  border: 0;
+  outline: 0;
+}
+
+.email-input input::placeholder {
+  color: #555555;
+  font-size: 15px;
+}
+
+.email-input button {
+  background-color: #0066ff;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 17px;
+}
+
+.email-input i {
+  position: relative;
+  bottom: 4px;
+  left: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px;
+    display: block !important;
+  }
+
+  .article-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    justify-content: center;
+  }
+
+  .article-buttons {
+    min-width: auto;
+    max-width: 730px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .trending-container {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 5px;
+  }
+
+  .trending-stories {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .newsfeed-div {
+    max-width: 100%;
+  }
+
+  .trending-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    gap: 10px;
+  }
+
+  .trending-articles article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-info {
+    min-width: 350px;
+  }
+
+  .article-info h2 {
+    font-size: 19px;
+  }
+
+  .aside-content {
+    font-size: 16px;
+  }
+
+  .top-image {
+    height: 200px;
+    margin: 0;
+  }
+
+  .top-title {
+    font-size: 18px;
+    -webkit-line-clamp: 2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 4px 0;
+    color: #232f3e;
+    width: 100%;
+  }
+
+  .trending-header::before {
+    width: 9%;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .news-image {
+    max-width: 100%;
+  }
+
+  .article-info {
+    max-width: 100%;
+    padding: 5px;
+    min-width: auto;
+  }
+
+  .aside-heading {
+    padding: 5px 0;
+  }
+}

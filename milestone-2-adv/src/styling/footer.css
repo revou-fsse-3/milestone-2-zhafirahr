@@ -1,0 +1,113 @@
+.footer {
+  background: #f4f7ff;
+  border-top: 5px solid #e2e7fd;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.social-icon {
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  color: #fff !important;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover {
+  text-decoration: none !important;
+}
+
+.social-icon i {
+  position: relative;
+  bottom: 6px;
+  left: 10px;
+}
+
+.socials-inner-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 1100px;
+  width: 100%;
+}
+
+.social-wrapper span {
+  color: #4e6a8d;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-extra {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+  row-gap: 20px;
+}
+
+.footer-extra-lists {
+  width: 100%;
+}
+
+.footer-list {
+  gap: 5px;
+}
+
+.footer-list-header {
+  font-size: 16px;
+  color: #232f3e;
+  cursor: default;
+}
+
+.footer-list-item {
+  font-size: 14px;
+  color: #4e6a8d;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.footer-extra-buttons {
+  width: 100%;
+  gap: 15px;
+}
+
+.footer-extra-buttons button {
+  background: #4469f5;
+  border-radius: 4px;
+  font-size: 15px;
+  max-width: 300px;
+  width: 100%;
+  color: #fff;
+  border: none;
+}
+
+.footer-note {
+  color: #4e6a8d;
+  border-top: 2px solid #e2e7fd;
+  font-size: 11px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 780px) {
+  .footer-extra-buttons {
+    align-items: flex-start !important;
+  }
+
+  .rss-button {
+    display: none !important;
+  }
+
+  .footer-extra {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}

@@ -1,0 +1,289 @@
+.top-header {
+  background-color: #271dae;
+  height: 27%;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: #8fa0ff;
+  font-size: 14px;
+}
+
+.top-container {
+  width: 90%;
+  height: 27px;
+}
+
+.top-container i {
+  color: white;
+  cursor: pointer;
+}
+
+.bottom-header {
+  background-color: #3a33c5;
+  height: 80px;
+}
+
+.bottom-header .row {
+  height: 100%;
+}
+
+.heading-container {
+  width: 520px;
+  user-select: none;
+  cursor: default;
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0px;
+  font-size: 55px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  letter-spacing: -2px;
+}
+
+.search-div {
+  height: 50%;
+}
+
+body {
+  margin: 0;
+}
+
+.divider {
+  background-color: #d7d8f58a;
+  height: 130px;
+}
+
+.subscribe-button {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 500;
+  color: #4a380e;
+  background-color: #ffdb4d;
+  font-size: 16px;
+  height: 40px;
+}
+
+.subscribe-button i {
+  margin-bottom: 10px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  height: 46px;
+  background-color: #fff;
+  box-shadow: 0 5px 0 rgb(223 231 255);
+  color: #4e6a8d;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  transition: 0.3s ease-in-out forwards;
+}
+
+form,
+.input-group,
+form input {
+  height: 0px !important;
+  padding: 0px !important;
+  transition: 0.3s ease-in-out;
+}
+
+input::placeholder {
+  color: #555555 !important;
+}
+
+.input-group {
+  width: 83% !important;
+}
+
+.form-displayed {
+  padding: 5px !important;
+  height: 50px !important;
+  background-color: white;
+}
+
+.input-group-displayed {
+  height: 36px !important;
+}
+
+form input {
+  transition: 0.3s ease-in-out !important;
+}
+
+.input-displayed {
+  padding: 5px !important;
+  height: 36px !important;
+}
+
+nav ul {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  list-style: none;
+}
+
+nav li {
+  padding: 0 20px;
+  border-bottom: 4px solid transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+nav li:hover {
+  border-bottom: 4px solid #271dae;
+}
+
+nav i {
+  font-size: 20px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1140px) {
+  .d-breaches,
+  .malware {
+    display: none !important;
+  }
+  .top-container {
+    width: 100%;
+  }
+  .trusted {
+    width: 50% !important;
+    justify-content: start !important;
+  }
+  .icon-div {
+    width: 50% !important;
+    justify-content: end !important;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .icon-div p,
+  .subscribe-div,
+  .d-breaches,
+  .vulnerable,
+  .malware,
+  .contact,
+  .cyber-attacks,
+  .icons-menu {
+    display: none !important;
+  }
+
+  .newsletter {
+    display: flex !important;
+  }
+
+  .bottom-header {
+    height: 60px;
+  }
+
+  .bottom-container {
+    padding-right: 10px !important;
+  }
+
+  .heading-container {
+    width: 75% !important;
+  }
+
+  .header-search {
+    width: 20% !important;
+    display: flex !important;
+    padding-right: 0 !important;
+    color: white;
+  }
+
+  .icon-div {
+    padding-right: 10px;
+  }
+
+  .icon-div i {
+    font-size: 12px;
+    margin-right: 0px !important;
+    padding-right: 10px !important;
+  }
+
+  .icon-div a {
+    margin-right: 3px !important;
+    width: 27px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .icon-div:last-child {
+    margin-right: 0 !important;
+  }
+
+  .home-icon {
+    display: flex !important;
+  }
+
+  .cart-icon {
+    display: flex !important;
+  }
+
+  li i {
+    margin-bottom: 7px !important;
+    font-size: 13px !important;
+    margin-right: 5px !important;
+  }
+
+  .heading {
+    font-size: 50px;
+  }
+
+  nav {
+    border-bottom: 4px solid #ffdb4d;
+    display: flex !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .menu {
+    padding-left: 0 !important;
+    width: 100%;
+  }
+
+  .menu ul {
+    justify-content: center;
+    padding: 0px !important;
+  }
+
+  ul li {
+    justify-content: center;
+    border: none !important;
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading {
+    font-size: 32px !important;
+  }
+
+  .trusted {
+    width: 70% !important;
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 402px) {
+  .heading {
+    font-size: 25px !important;
+  }
+  .trusted {
+    width: 75% !important;
+  }
+  .icon-div {
+    width: 25% !important;
+  }
+}
